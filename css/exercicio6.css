@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: darkgrey;
+}
+
+#meuGridContainer{
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "meuHeader meuHeader meuHeader"
+    "meuNav meuMain meuAside"
+    "meuFooter meuFooter meuFooter";
+    gap: 10px;
+    width: 90%;
+    max-width: 1200px;
+    height: 100vh;
+}
+
+.meuHeader {
+    grid-area: meuHeader;
+    background-color: darkviolet;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.meuNav{
+    grid-area: meuNav;
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+}
+
+.meuMain{
+    grid-area: meuMain;
+    background-color: lime;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.meuAside{
+    grid-area: meuAside;
+    background-color: cyan;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.meuFooter{
+    grid-area: meuFooter;
+    background-color: brown;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    color: white;
+}

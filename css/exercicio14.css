@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.botaoFunc {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+@media (hover: none) {
+    .botaoFunc {
+        background-color: brown;
+        color: white;
+    }
+
+    .botaoFunc:active {
+        transform: scale(0.95);
+        background-color: black;
+    }
+}
+
+@media (hover: hover) {
+    .botaoFunc {
+        background-color: cornflowerblue;
+        color: white;
+    }
+
+    .botaoFunc:hover {
+        background-color: chartreuse;
+        transform: translateY(-3px);
+    }
+}
